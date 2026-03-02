@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 const message = ref<string>('Loading...')
 const error = ref<string | null>(null)
@@ -51,6 +52,8 @@ onMounted(() => {
       <p class="docs">
         Check <a href="http://127.0.0.1:8000/docs" target="_blank">FastAPI Docs</a> for interactive API testing.
       </p>
+
+      <HelloWorld msg="Hello World" />
     </div>
   </div>
 </template>
